@@ -1,0 +1,4 @@
+D:\SelfStudy\C#\Practice\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe
+D:\SelfStudy\C#\Practice\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.pdb
+D:\SelfStudy\C#\Practice\CoffeeShop\CoffeeShop\obj\x86\Debug\CoffeeShop.exe
+D:\SelfStudy\C#\Practice\CoffeeShop\CoffeeShop\obj\x86\Debug\CoffeeShop.pdb

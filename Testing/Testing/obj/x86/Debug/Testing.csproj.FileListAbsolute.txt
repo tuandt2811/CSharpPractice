@@ -1,0 +1,5 @@
+D:\SelfStudy\C#\Practice\Testing\Testing\bin\Debug\Testing.exe
+D:\SelfStudy\C#\Practice\Testing\Testing\bin\Debug\Testing.pdb
+D:\SelfStudy\C#\Practice\Testing\Testing\obj\x86\Debug\Testing.exe
+D:\SelfStudy\C#\Practice\Testing\Testing\obj\x86\Debug\Testing.pdb
+D:\SelfStudy\C#\Practice\Testing\Testing\obj\x86\Debug\Testing.csprojResolveAssemblyReference.cache
