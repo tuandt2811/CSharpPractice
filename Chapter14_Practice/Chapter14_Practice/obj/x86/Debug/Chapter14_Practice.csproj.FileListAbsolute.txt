@@ -6,3 +6,7 @@ F:\Tuan\C#\Practice\Chapter14_Practice\Chapter14_Practice\obj\x86\Debug\Chapter1
 F:\Tuan\C#\Practice\Chapter14_Practice\Chapter14_Practice\obj\x86\Debug\Chapter14_Practice.pdb
 F:\Tuan\C#\Practice\Chapter14_Practice\Chapter14_Practice\bin\Debug\Chapter14_Practice.exe
 F:\Tuan\C#\Practice\Chapter14_Practice\Chapter14_Practice\bin\Debug\Chapter14_Practice.pdb
+D:\SelfStudy\C#\CSharpPractice\Chapter14_Practice\Chapter14_Practice\obj\x86\Debug\Chapter14_Practice.exe
+D:\SelfStudy\C#\CSharpPractice\Chapter14_Practice\Chapter14_Practice\obj\x86\Debug\Chapter14_Practice.pdb
+D:\SelfStudy\C#\CSharpPractice\Chapter14_Practice\Chapter14_Practice\bin\Debug\Chapter14_Practice.exe
+D:\SelfStudy\C#\CSharpPractice\Chapter14_Practice\Chapter14_Practice\bin\Debug\Chapter14_Practice.pdb

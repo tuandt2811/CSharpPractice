@@ -127,7 +127,7 @@ namespace Chapter14_Practice
 
         static void Main(string[] args)
         {
-            int temp = 0;
+            /* int temp = 0;
             OpenClass();
             Student StdNum1 = new Student("Dam Trong Tuan", "C# Programming", "Class and OOP", "Transport and Communication", "asterik2811@gmail.com", "01695171325");
             Student StdNum2 = new Student("Tran Minh Viet", "Java Programming", "Class and OOP", "Telecommunication", "Viet@gmail.com", "01695171325");
@@ -141,7 +141,11 @@ namespace Chapter14_Practice
                 StudentTest.CSharpStudent.PrintStudentInformation();
                 Console.WriteLine("");
             }
-            Console.WriteLine("End, ahihihi!!!!");
+            Console.WriteLine("End, ahihihi!!!!");*/
+            MobilePhone newPhone = new MobilePhone("IPhoneX", "Apple", 12000, "Tuan", new MobilePhone.Energy("Recharge", BatteryType.LiION, 0, 0), new MobilePhone.display(20, 20, "Full HD"));
+            string Info = newPhone.ToString();
+            Console.WriteLine(Info);
+            MobilePhone.DemoInformation();
         }
     }
 }
