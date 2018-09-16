@@ -50,6 +50,14 @@ namespace Chapter14_Practice
                 this.color = color;
             }
         }
+
+        public class Call
+        {
+            private int start_date_of_call;
+            private int start_time_of_call;
+            private int duration_of_call;
+
+        }
         
 
         /* Constructors*/
