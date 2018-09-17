@@ -144,10 +144,18 @@ namespace Chapter14_Practice
     {
         private _Call head_call;
         private _Call end_call;
+        private int number_of_log;
+
+        public int NumOfLog
+        {
+            get { return this.number_of_log; }
+        }
+
         public _CallHistory()
         {
             this.head_call = null;
             this.end_call = null;
+            number_of_log = 0;
         }
 
         public _Call GetCallRecord(int RecordID)
@@ -177,22 +185,40 @@ namespace Chapter14_Practice
                 this.end_call = NewCall;
                 this.end_call.NextCall = null;
             }
+            number_of_log++;
         }
 
         public void RemoveCallFromHistory(int RecordID)
         {
             _Call tempCall = this.head_call;
             _Call prevTempCall = this.head_call;
-            while (tempCall != null)
+
+            if (tempCall != null)
             {
                 if (tempCall.RecordID == RecordID)
                 {
-                    prevTempCall.NextCall = tempCall.NextCall;
+                    this.head_call = tempCall.NextCall;
                     tempCall.NextCall = null;
-                    break;
+                    number_of_log--;
                 }
-                prevTempCall = tempCall;
-                tempCall = tempCall.NextCall;
+                else
+                {
+                    prevTempCall = tempCall;
+                    tempCall = tempCall.NextCall;
+
+                    while (tempCall != null)
+                    {
+                        if (tempCall.RecordID == RecordID)
+                        {
+                            prevTempCall.NextCall = tempCall.NextCall;
+                            tempCall.NextCall = null;
+                            number_of_log--;
+                            break;
+                        }
+                        prevTempCall = tempCall;
+                        tempCall = tempCall.NextCall;
+                    }
+                }
             }
         }
     }
@@ -205,6 +231,103 @@ namespace Chapter14_Practice
         private string owner;
         private _Battery battery;
         private _Display display;
-        private _CallHistory calls;
+        private _CallHistory CallLog;
+        /* Properties */
+        public string Model
+        {
+            get { return this.model; }
+        }
+
+        public string Manufacture
+        {
+            get { return this.manufacture; }
+        }
+
+        public int Price
+        {
+            set { this.price = value; }
+            get { return this.price; }
+        }
+
+        public string Owner
+        {
+            set { this.owner = value; }
+            get { return this.owner; }
+        }
+
+        public _Battery Battery
+        {
+            set { this.battery = value; }
+            get { return this.battery; }
+        }
+
+        public _Display Display
+        {
+            set { this.display = value; }
+            get { return this.display; }
+        }
+
+        /* Constructor */
+        public MobilePhone2() 
+            : this(null)
+        {
+
+        }
+        public MobilePhone2(string model) 
+            : this(model, null)
+        {
+
+        }
+        public MobilePhone2(string model, string manufacture) 
+            : this(model, manufacture, 0)
+        {
+
+        }
+        public MobilePhone2(string model, string manufacture, int price) 
+            : this(model, manufacture, price, null)
+        {
+
+        }
+        public MobilePhone2(string model, string manufacture, int price, string owner)
+            : this(model, manufacture, price, owner, null)
+        {
+        }
+        public MobilePhone2(string model, string manufacture, int price, string owner, _Battery battery)
+            : this(model, manufacture, price, owner, battery, null)
+        {
+        }
+        public MobilePhone2(string model, string manufacture, int price, string owner, _Battery battery, _Display display)
+        {
+            this.model = model;
+            this.manufacture = manufacture;
+            this.price = price;
+            this.owner = owner;
+            this.battery = battery;
+            this.display = display;
+            this.CallLog = new _CallHistory();
+        }
+
+        /* Mobile Features */
+        public void Call(string date, string time_of_start, int duration_of_call)
+        {
+            _Call NewCall = new _Call(date, time_of_start, duration_of_call);
+            this.CallLog.AddNewCall(NewCall);
+        }
+
+        public void DisplayLog(int LogID)
+        {
+            _Call Call = null;
+            Call = this.CallLog.GetCallRecord(LogID);
+            Console.WriteLine(" ---> Call Date {0}", Call.Date);
+            Console.WriteLine(" ---> Start time {0}", Call.TimeOfStart);
+            Console.WriteLine(" ---> Duration {0}", Call.DurationOfCall);
+        }
+
+        public void DisplayFullLog()
+        {
+            _Call tempCall = null;
+
+        }
+
     }
 }
