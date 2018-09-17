@@ -142,10 +142,20 @@ namespace Chapter14_Practice
                 Console.WriteLine("");
             }
             Console.WriteLine("End, ahihihi!!!!");*/
-            MobilePhone newPhone = new MobilePhone("IPhoneX", "Apple", 12000, "Tuan", new MobilePhone.Energy("Recharge", BatteryType.LiION, 0, 0), new MobilePhone.display(20, 20, "Full HD"));
+            /*MobilePhone newPhone = new MobilePhone("IPhoneX", "Apple", 12000, "Tuan", new MobilePhone.Energy("Recharge", BatteryType.LiION, 0, 0), new MobilePhone.display(20, 20, "Full HD"));
             string Info = newPhone.ToString();
             Console.WriteLine(Info);
-            MobilePhone.DemoInformation();
+            MobilePhone.DemoInformation();*/
+
+            MobilePhone2 IphoneX = new MobilePhone2("Smart Phone", "Apple", 2000, "TuanDT", new _Battery("LI-ION", 0, 0), new _Display(5, 10, "FULL HD"));
+            IphoneX.DisplayInformation();
+            IphoneX.DisplayFullLog();
+
+            /* Call to my Mom*/
+            IphoneX.Call("17/09/2018", "11:57 PM", 20);
+            /* Call to my friend */
+            IphoneX.Call("16/09/2018", "01:00 AM", 20);
+            IphoneX.DisplayFullLog();
         }
     }
 }

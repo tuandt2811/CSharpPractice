@@ -221,6 +221,18 @@ namespace Chapter14_Practice
                 }
             }
         }
+
+        public void PrintAllRecords()
+        {
+            _Call tempCall = this.head_call;
+            while (tempCall != null)
+            {
+                Console.WriteLine(" ---> Call Date {0}", tempCall.Date);
+                Console.WriteLine(" ---> Start time {0}", tempCall.TimeOfStart);
+                Console.WriteLine(" ---> Duration {0}", tempCall.DurationOfCall);
+                tempCall = tempCall.NextCall;
+            }
+        }
     }
 
     class MobilePhone2
@@ -314,6 +326,24 @@ namespace Chapter14_Practice
             this.CallLog.AddNewCall(NewCall);
         }
 
+        public void DisplayInformation()
+        {
+            Console.WriteLine("Mobile Information");
+            Console.WriteLine("  *Model : {0}*  ", this.model);
+            Console.WriteLine("  *Manufacture : {0}*  ", this.manufacture);
+            Console.WriteLine("  *Price : {0}*  ", this.price);
+            Console.WriteLine("  *Owner : {0}*  ", this.owner);
+            Console.WriteLine("Battery Information");
+            Console.WriteLine("  *Model : {0}*  ", this.battery.Model);
+            Console.WriteLine("  *Idle Time : {0}*  ", this.battery.IdleTime);
+            Console.WriteLine("  *Start hours : {0}*  ", this.battery.HoursTalk);
+            Console.WriteLine("Display Information");
+            Console.WriteLine("  *Height : {0}*  ", this.display.Height);
+            Console.WriteLine("  *Width : {0}*  ", this.display.Width);
+            Console.WriteLine("  *Color : {0}*  ", this.display.Colors);
+            Console.WriteLine("Size Of Call History : {0}", this.CallLog.NumOfLog);
+        }
+
         public void DisplayLog(int LogID)
         {
             _Call Call = null;
@@ -323,10 +353,14 @@ namespace Chapter14_Practice
             Console.WriteLine(" ---> Duration {0}", Call.DurationOfCall);
         }
 
+        public void DeleteRecord(int LogID)
+        {
+            this.CallLog.RemoveCallFromHistory(LogID);
+        }
+
         public void DisplayFullLog()
         {
-            _Call tempCall = null;
-
+            this.CallLog.PrintAllRecords();
         }
 
     }
