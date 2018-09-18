@@ -188,6 +188,19 @@ namespace Chapter14_Practice
             number_of_log++;
         }
 
+        public void RemoveAllFromHistory()
+        {
+            _Call tempCall = this.head_call;
+            _Call sliceCall = null;
+            while (tempCall != null)
+            {
+                sliceCall = tempCall.NextCall;
+                tempCall.NextCall = null;
+                tempCall = sliceCall;
+            }
+            this.head_call = null;
+        }
+
         public void RemoveCallFromHistory(int RecordID)
         {
             _Call tempCall = this.head_call;
@@ -227,6 +240,7 @@ namespace Chapter14_Practice
             _Call tempCall = this.head_call;
             while (tempCall != null)
             {
+                Console.WriteLine("Record [{0}]", tempCall.RecordID);
                 Console.WriteLine(" ---> Call Date {0}", tempCall.Date);
                 Console.WriteLine(" ---> Start time {0}", tempCall.TimeOfStart);
                 Console.WriteLine(" ---> Duration {0}", tempCall.DurationOfCall);
@@ -348,14 +362,27 @@ namespace Chapter14_Practice
         {
             _Call Call = null;
             Call = this.CallLog.GetCallRecord(LogID);
-            Console.WriteLine(" ---> Call Date {0}", Call.Date);
-            Console.WriteLine(" ---> Start time {0}", Call.TimeOfStart);
-            Console.WriteLine(" ---> Duration {0}", Call.DurationOfCall);
+            if (Call != null)
+            {
+                Console.WriteLine("Record [{0}]", LogID);
+                Console.WriteLine(" ---> Call Date {0}", Call.Date);
+                Console.WriteLine(" ---> Start time {0}", Call.TimeOfStart);
+                Console.WriteLine(" ---> Duration {0}", Call.DurationOfCall);
+            }
+            else
+            {
+                Console.WriteLine("***** Cannot find the log with Log Id : {0}", LogID);
+            }
         }
 
         public void DeleteRecord(int LogID)
         {
             this.CallLog.RemoveCallFromHistory(LogID);
+        }
+
+        public void DeleteHistory()
+        {
+            this.CallLog.RemoveAllFromHistory();
         }
 
         public void DisplayFullLog()

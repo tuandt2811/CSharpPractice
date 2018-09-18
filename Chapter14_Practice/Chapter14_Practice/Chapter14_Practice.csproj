@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookLibrary.cs" />
+    <Compile Include="Generic.cs" />
     <Compile Include="MobilePhone.cs" />
     <Compile Include="MobilePhone2.cs" />
     <Compile Include="Program.cs" />

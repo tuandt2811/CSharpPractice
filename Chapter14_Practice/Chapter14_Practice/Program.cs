@@ -155,7 +155,28 @@ namespace Chapter14_Practice
             IphoneX.Call("17/09/2018", "11:57 PM", 20);
             /* Call to my friend */
             IphoneX.Call("16/09/2018", "01:00 AM", 20);
+            IphoneX.Call("17/09/2018", "02:00 AM", 20);
+            IphoneX.Call("18/09/2018", "03:00 AM", 20);
+            IphoneX.Call("19/09/2018", "04:00 AM", 20);
+            IphoneX.Call("20/09/2018", "05:00 AM", 20);
+            IphoneX.Call("21/09/2018", "06:00 AM", 20);
+            IphoneX.Call("22/09/2018", "07:00 AM", 20);
+            IphoneX.Call("23/09/2018", "08:00 AM", 20);
+            IphoneX.Call("24/09/2018", "09:00 AM", 20);
+            IphoneX.Call("25/09/2018", "10:00 AM", 20);
+            IphoneX.Call("26/09/2018", "11:00 AM", 20);
+            IphoneX.Call("27/09/2018", "12:00 AM", 20);
+            IphoneX.Call("28/09/2018", "01:00 PM", 20);
+            IphoneX.Call("29/09/2018", "02:00 PM", 20);
+            IphoneX.Call("30/09/2018", "03:00 PM", 20);
+            IphoneX.DeleteRecord(1);
+            IphoneX.DeleteRecord(2);
+            IphoneX.DeleteRecord(10);
             IphoneX.DisplayFullLog();
+            Console.WriteLine("Delete records"); 
+            IphoneX.DeleteHistory();
+            IphoneX.DisplayLog(3);
+            
         }
     }
 }
