@@ -1,0 +1,7 @@
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\bin\Debug\SpeedUpWork.exe
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\bin\Debug\SpeedUpWork.pdb
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.Properties.Resources.resources
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.csproj.GenerateResource.Cache
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.exe
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.pdb
+D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.MainFrame.resources
