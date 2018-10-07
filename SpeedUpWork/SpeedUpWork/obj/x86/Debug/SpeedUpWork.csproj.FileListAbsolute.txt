@@ -5,3 +5,13 @@ D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.cspro
 D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.exe
 D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.pdb
 D:\SelfStudy\C#\Practice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.MainFrame.resources
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.exe
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.pdb
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\bin\Debug\SpeedUpWork.exe
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\bin\Debug\SpeedUpWork.pdb
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.MainFrame.resources
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.Properties.Resources.resources
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.csproj.GenerateResource.Cache
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.BuildPlugin.resources
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.Enviroment.resources
+F:\Tuan\C#\CSharpPractice\SpeedUpWork\SpeedUpWork\obj\x86\Debug\SpeedUpWork.ProjectExplorer.resources

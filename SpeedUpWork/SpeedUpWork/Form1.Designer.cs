@@ -28,127 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.ModuleName = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.WorkFolder = new System.Windows.Forms.Label();
-            this.PluginButton = new System.Windows.Forms.Button();
-            this.checkBoxBuildDep = new System.Windows.Forms.CheckBox();
-            this.GitButton = new System.Windows.Forms.Button();
-            this.ExitButton = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.butBrower = new System.Windows.Forms.Button();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // newToolStripMenuItem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(89, 77);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 21);
-            this.comboBox1.TabIndex = 3;
+            this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectToolStripMenuItem});
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.newToolStripMenuItem.Text = "File";
             // 
-            // ModuleName
+            // projectToolStripMenuItem
             // 
-            this.ModuleName.AutoSize = true;
-            this.ModuleName.Location = new System.Drawing.Point(12, 80);
-            this.ModuleName.Name = "ModuleName";
-            this.ModuleName.Size = new System.Drawing.Size(47, 13);
-            this.ModuleName.TabIndex = 1;
-            this.ModuleName.Text = "Modules";
+            this.projectToolStripMenuItem.Name = "projectToolStripMenuItem";
+            this.projectToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.projectToolStripMenuItem.Text = "New Project";
+            this.projectToolStripMenuItem.Click += new System.EventHandler(this.projectToolStripMenuItem_Click);
             // 
-            // comboBox2
+            // viewToolStripMenuItem
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(89, 33);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(237, 21);
-            this.comboBox2.TabIndex = 1;
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resetViewToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
             // 
-            // WorkFolder
+            // resetViewToolStripMenuItem
             // 
-            this.WorkFolder.AutoSize = true;
-            this.WorkFolder.Location = new System.Drawing.Point(12, 36);
-            this.WorkFolder.Name = "WorkFolder";
-            this.WorkFolder.Size = new System.Drawing.Size(65, 13);
-            this.WorkFolder.TabIndex = 3;
-            this.WorkFolder.Text = "Work Folder";
+            this.resetViewToolStripMenuItem.Name = "resetViewToolStripMenuItem";
+            this.resetViewToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.resetViewToolStripMenuItem.Text = "Reset View";
             // 
-            // PluginButton
+            // menuStrip1
             // 
-            this.PluginButton.Location = new System.Drawing.Point(49, 153);
-            this.PluginButton.Name = "PluginButton";
-            this.PluginButton.Size = new System.Drawing.Size(75, 23);
-            this.PluginButton.TabIndex = 5;
-            this.PluginButton.Text = "Build Plugin";
-            this.PluginButton.UseVisualStyleBackColor = true;
-            this.PluginButton.Click += new System.EventHandler(this.PluginButton_Click);
-            // 
-            // checkBoxBuildDep
-            // 
-            this.checkBoxBuildDep.AutoSize = true;
-            this.checkBoxBuildDep.BackColor = System.Drawing.SystemColors.Control;
-            this.checkBoxBuildDep.Location = new System.Drawing.Point(88, 119);
-            this.checkBoxBuildDep.Name = "checkBoxBuildDep";
-            this.checkBoxBuildDep.Size = new System.Drawing.Size(135, 17);
-            this.checkBoxBuildDep.TabIndex = 4;
-            this.checkBoxBuildDep.Text = "Build with dependecies";
-            this.checkBoxBuildDep.UseVisualStyleBackColor = false;
-            // 
-            // GitButton
-            // 
-            this.GitButton.Location = new System.Drawing.Point(145, 153);
-            this.GitButton.Name = "GitButton";
-            this.GitButton.Size = new System.Drawing.Size(75, 23);
-            this.GitButton.TabIndex = 6;
-            this.GitButton.Text = "Git view";
-            this.GitButton.UseVisualStyleBackColor = true;
-            this.GitButton.Click += new System.EventHandler(this.GitButton_Click);
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.Location = new System.Drawing.Point(251, 153);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(75, 23);
-            this.ExitButton.TabIndex = 7;
-            this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(21, 198);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(329, 13);
-            this.progressBar1.TabIndex = 8;
-            // 
-            // butBrower
-            // 
-            this.butBrower.Location = new System.Drawing.Point(332, 31);
-            this.butBrower.Name = "butBrower";
-            this.butBrower.Size = new System.Drawing.Size(28, 23);
-            this.butBrower.TabIndex = 2;
-            this.butBrower.Text = "...";
-            this.butBrower.UseVisualStyleBackColor = true;
-            this.butBrower.Click += new System.EventHandler(this.butBrower_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.viewToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(523, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // MainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 241);
-            this.Controls.Add(this.butBrower);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.GitButton);
-            this.Controls.Add(this.checkBoxBuildDep);
-            this.Controls.Add(this.PluginButton);
-            this.Controls.Add(this.WorkFolder);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.ModuleName);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(523, 368);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainFrame";
             this.Text = "Virtual View";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,16 +95,14 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label ModuleName;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label WorkFolder;
-        private System.Windows.Forms.Button PluginButton;
-        private System.Windows.Forms.CheckBox checkBoxBuildDep;
-        private System.Windows.Forms.Button GitButton;
-        private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button butBrower;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resetViewToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+
+
+
 
 
     }

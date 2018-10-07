@@ -11,29 +11,51 @@ namespace SpeedUpWork
 {
     public partial class MainFrame : Form
     {
+        Testing testView = null;
+        Enviroment enviView = null;
+        BuildPlugin pluginView = null;
+        ProjectExplorer projectView = null;
+        int MainWidth = 0;
+        int MainHeight = 0;
+
+        int projectViewWidth = 0;
+        int projectViewHeight = 0;
+
         public MainFrame()
         {
             InitializeComponent();
+            MainWidth = Screen.PrimaryScreen.Bounds.Width;
+            MainHeight = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(MainWidth, MainHeight);
         }
 
-        private void butBrower_Click(object sender, EventArgs e)
+        private void projectToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Rectangle DisplayView;
 
-        }
+            testView = new Testing();
+            enviView = new Enviroment();
+            pluginView = new BuildPlugin();
+            projectView = new ProjectExplorer();
 
-        private void PluginButton_Click(object sender, EventArgs e)
-        {
+            testView.MdiParent = this;
+            enviView.MdiParent = this;
+            pluginView.MdiParent = this;
+            projectView.MdiParent = this;
 
-        }
+            projectViewHeight = MainHeight;
+            projectViewWidth = 200;
+            DisplayView = this.ClientRectangle;
+            projectView.Location = new Point(DisplayView.X, DisplayView.Y);
+            projectView.Size = new Size(projectViewWidth, projectViewHeight);
+            projectView.Show();
 
-        private void GitButton_Click(object sender, EventArgs e)
-        {
+            testView.Show();
+            enviView.Show();
+            pluginView.Show();
 
-        }
-
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
     }
